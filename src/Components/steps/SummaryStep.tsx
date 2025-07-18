@@ -3,7 +3,7 @@ import { useFormStore } from "../../store/formStore"
 const SummaryStep = () => {
 
   //the zustand form
-  const {data, updateField} = useFormStore();
+  const {data} = useFormStore();
   return (
     <div className="space-y-2">
       <h2 className="text-lg font-bold">Summary</h2>
