@@ -1,13 +1,16 @@
-import React from 'react'
-import DemoComponent from './Components/DemoComponent'
+import Hero from "./Components/Hero";
+
 
 const App = () => {
-  return (
-    <div className='bg-[#F5EFEB] h-screen'>
-     
-      <DemoComponent fullName={'Mambwe'} age={27} />
-    </div>
-  )
-}
+  //state hook
 
-export default App
+
+  return (
+    <div
+    
+    ><Hero/>
+    </div>
+  );
+};
+
+export default App;
