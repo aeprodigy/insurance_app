@@ -43,11 +43,12 @@ const FormsWrapper = () => {
       <div>{steps[currentStep].component}</div>
 
       {/** Buttons logic */}
-      <div className="flex justify-between mt-6">
+      <div className="flex  justify-between mt-6 ">
         {/** Button back */}
         <button
           disabled={currentStep === 0}
           className="
+          
       cursor-pointer
       px-4 
       py-2
@@ -63,7 +64,13 @@ const FormsWrapper = () => {
         </button>
       </div>
       {/** Next button logic */}
-      {currentStep < steps.length - 1 ? (
+
+
+        <div>
+          {/** The buttons start here
+           * 
+           */}
+           {currentStep < steps.length - 1 ? (
         <button
           className="
         cursor-pointer
@@ -92,7 +99,9 @@ const FormsWrapper = () => {
           Submit
         </button>
       )}
-    </div>
+
+          </div>      
+          </div>
   );
 };
 

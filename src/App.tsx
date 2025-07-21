@@ -1,4 +1,4 @@
-import Hero from "./Components/Hero";
+import HeroSection from "./Components/HeroSection";
 
 
 const App = () => {
@@ -8,7 +8,8 @@ const App = () => {
   return (
     <div
     
-    ><Hero/>
+    >
+      <HeroSection/>
     </div>
   );
 };
