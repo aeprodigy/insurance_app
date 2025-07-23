@@ -1,11 +1,11 @@
 import React from 'react'
 import { FaCar } from 'react-icons/fa';
-import img4 from "../assets/background_images/phone.jpg";
+import img4 from "../assets/background_images/car_crash.png";
 
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="w-full h-screen bg-gradient-to-br  from-white to-blue-50 rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-2 px-8">
+    <section className="w-full h-screen bg-gradient-to-br  from-white to-blue-50 rounded-xl shadow-lg p-8 md:p-18 flex flex-col md:flex-row items-center justify-between gap-2 px-8">
       {/* Left Content */}
       <div className="flex-1 space-y-6 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
