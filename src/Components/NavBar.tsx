@@ -6,17 +6,17 @@ const NavBar = () => {
   return (
     <div className="px-4 py-4">
       <nav className="flex justify-between items-center">
-        <div className="text-xl font-semibold text-gray-700 ">
-            Motor
-          <span className="inline-flex items-center bg-gray-800 text-white px-3 py-2 rounded-full mx-2">
+        <div className="text md:text-2xl font-semibold text-gray-700 ">
+          Motor
+          <span className="inline-flex items-center bg-gray-800 text-white px-2 py-2 rounded-full mx-">
             <FaCar className="text-white w-3 h-3" />
-          </span>{" "}
+          </span>
           Insurance
         </div>
-        <ol className="hidden sm:flex space-x-3  ">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About Us</li>
-          <li className="cursor-pointer">Contact</li>
+        <ol className="hidden sm:flex space-x-3">
+          <li className="cursor-pointer hover:font-bold">Home</li>
+          <li className="cursor-pointer hover:font-bold">About Us</li>
+          <li className="cursor-pointer hover:font-bold">Contact</li>
         </ol>
         {/**Button Component */}
         <Button text={"Request Quote"} />
