@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import img4 from "../assets/background_images/car_crash.png";
+import Button from "./buttons/Button";
 
-const HeroSection: React.FC = () => {
+interface HeroSectionProps {
+  onGetQuoteClick: () => void;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ onGetQuoteClick }) => {
   return (
     <section className="w-full h-screen bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-lg p-8 md:p-18 flex flex-col md:flex-row items-center justify-between gap-2 px-12">
       {/* Left Content */}
@@ -36,9 +41,10 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 1 }}
         >
-          <button className="bg-gray-800 cursor-pointer text-white px-6 py-3 rounded-md hover:bg-gray-700 transition shadow-md">
-            Get Quote Now
-          </button>
+          
+          <Button text={"Get Quote Now"} 
+          onClick={onGetQuoteClick}         
+          />
           <button className="bg-white border cursor-pointer border-gray-300 px-6 py-3 rounded-md hover:shadow-md transition">
             View Coverage
           </button>

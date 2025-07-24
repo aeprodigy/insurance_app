@@ -1,8 +1,11 @@
 
 import Button from './buttons/Button'
 import { FaCar } from 'react-icons/fa';
+interface NavBarProps {
+  onGetQuoteClick: () => void;
+}
 
-const NavBar = () => {
+const NavBar:React.FC <NavBarProps>= ({onGetQuoteClick}) => {
   return (
     <div className="px-4 py-4">
       <nav className="flex justify-between items-center">
@@ -19,7 +22,9 @@ const NavBar = () => {
           <li className="cursor-pointer hover:font-bold">Contact</li>
         </ol>
         {/**Button Component */}
-        <Button text={"Request Quote"} />
+        <Button 
+        onClick={onGetQuoteClick}
+        text={"Request Quote"} />
       </nav>
     </div>
   );
