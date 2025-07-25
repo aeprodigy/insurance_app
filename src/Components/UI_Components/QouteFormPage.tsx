@@ -1,7 +1,8 @@
 // pages/QuoteFormPage.tsx or inside your HeroSection or wherever you want
-import React, { useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
 import FormsWrapper from "../FormsWrapper";
+//
 
 const QuoteFormPage = () => {
   const [isModalOpen, setModalOpen] = useState(false);
