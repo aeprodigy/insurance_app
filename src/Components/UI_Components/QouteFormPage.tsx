@@ -1,4 +1,3 @@
-// pages/QuoteFormPage.tsx or inside your HeroSection or wherever you want
 import { useState } from "react";
 import Modal from "./Modal";
 import FormsWrapper from "../FormsWrapper";

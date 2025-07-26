@@ -15,7 +15,7 @@ const FormsWrapper = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
   return (
-    <div className="bg-[#F5EFEB] max-w-xl mx-auto p-6 border rounded shadow max-h-[80vh] overflow-y-auto">
+    <div className="bg-[#FFF] max-w-xl mx-auto p-6 border rounded shadow max-h-[80vh] overflow-y-auto">
       <h1 className="text-2xl font-bold mb-4">Motor Insurance</h1>
       <h3 className="text-xl font-semibold mb-4">{steps[currentStep].label}</h3>
 

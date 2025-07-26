@@ -10,7 +10,7 @@ const CoverInfo = () => {
     
     "
     >
-      {/**Options */}
+      {/**Optionsn */}
       <select
         className="
         w-full 

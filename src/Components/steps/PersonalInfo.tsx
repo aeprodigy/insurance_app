@@ -4,7 +4,7 @@ const PersonalInfo = () => {
     const {data, updateField} = useFormStore();
 
   return (
-    <div>
+    <div >
         {/** name input */}
         <input 
         className="w-full p-2 border rounded mb-4"
